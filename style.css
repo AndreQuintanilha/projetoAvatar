@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(180, 178, 178);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown li a{
+    color: white;
+    font-size: 17px;
+}
+
+.navbar {
+    width: 100%;
+    font-size: 20px;
+}
+
+.avatar-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw; /* Ajuste conforme necessário */
+}
+
+#boneco {
+    width: 100%; /* Avatar base ocupa toda a largura disponível */
+    height: auto;
+    z-index: 1; /* Base do avatar */
+    position: relative;
+}
+
+#acessorio-cabeca {
+    
+    top: -18%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+
+#acessorio-corpo {
+    
+    top: 29%; /* Ajuste conforme necessário */
+    left:54%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+.acessorio {
+    position: absolute;
+    width: 100%; /* Alinhado com a largura do avatar */
+    height: auto;
+    top: 0; /* Inicia no topo do avatar */
+    z-index: 2; /* Fica acima do avatar */
+    display: none; /* Escondido inicialmente */
+}
+
+
+
+@media (min-width: 768px) {
+    .avatar-container {
+        width: 30vw; /* Ajuste para telas maiores */
+    }
+}
+
+@media (max-width: 767px) {
+    .avatar-container {
+        width: 80vw; /* Ajuste para telas menores */
+    }
+}

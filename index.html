@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- Botão hambúrguer -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">MONTE SEU AVATAR</a>
+      </div>
+      
+      <!-- Itens do navbar que serão colapsados -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Avatar<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="mudarAcessorio('avatar', 'img/avatar1.png')">avatar 1</a></li>
+              <li><a href="#" onclick="mudarAcessorio('avatar', 'img/avatar2.png')">avatar 2</a></li>
+              <li><a href="#" onclick="mudarAcessorio('avatar', 'img/avatar3.png')">avatar 3</a></li>
+              <li><a href="#" onclick="mudarAcessorio('avatar', 'img/avatar4.png')">avatar 4</a></li>
+              <li><a href="#" onclick="mudarAcessorio('avatar', 'img/avatar5.png')">avatar 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cabeça<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="mudarAcessorio('cabeca', 'img/cabelo1.png')">cabelo 1</a></li>
+              <li><a href="#" onclick="mudarAcessorio('cabeca', 'img/cabelo2.png')">cabelo 2</a></li>
+              <li><a href="#" onclick="mudarAcessorio('cabeca', 'img/cabelo3.png')">cabelo 3</a></li>
+              <li><a href="#" onclick="mudarAcessorio('cabeca', 'img/cabelo4.png')">cabelo 4</a></li>
+              <li><a href="#" onclick="mudarAcessorio('cabeca', 'img/cabelo5.png')">cabelo 5</a></li>
+              <li><a href="#" onclick="mudarAcessorio('cabeca', 'img/cabelo6.png')">cabelo 6</a></li>
+              <li><a href="#" onclick="mudarAcessorio('cabeca', 'img/cabelo7.png')">cabelo 7</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Corpo <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="mudarAcessorio('corpo', 'img/casaco1.png')">casaco 1</a></li>
+              <li><a href="#" onclick="mudarAcessorio('corpo', 'img/casaco2.png')">casaco 2</a></li>
+              <li><a href="#" onclick="mudarAcessorio('corpo', 'img/casaco3.png')">casaco 3</a></li>
+              <li><a href="#" onclick="mudarAcessorio('corpo', 'img/casaco4.png')">casaco 4</a></li>
+              <li><a href="#" onclick="mudarAcessorio('corpo', 'img/casaco5.png')">casaco 5</a></li>
+              <li><a href="#" onclick="mudarAcessorio('corpo', 'img/casaco6.png')">casaco 6</a></li>
+              <li><a href="#" onclick="mudarAcessorio('corpo', 'img/casaco7.png')">casaco 7</a></li>
+            </ul>
+          </li>
+          <li><a class="reset" href="#" onclick="restaurarPadrao()">Restaurar Padrão</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="avatar-container">
+    <img id="boneco" src="img/avatar1.png" alt="Boneco" class="img-responsive">
+    <img id="acessorio-cabeca" src="" alt="Acessório Cabeça" class="acessorio img-responsive">
+    <img id="acessorio-corpo" src="" alt="Acessório Corpo" class="acessorio img-responsive">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
